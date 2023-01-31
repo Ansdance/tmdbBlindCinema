@@ -6,45 +6,52 @@
 //
 
 import Foundation
-import SwiftyJSON
 
-struct EntityFilm {
+struct EntityFilm: Decodable {
     
-    var videoId = ""
+    var filmId: Int
     var title = ""
     var poster_path = ""
     var overview = ""
     var vote_average = ""
-    var release_date = ""
+    var release_date = Date()
     var vote_count = ""
     
-    init(){
+    enum CodingKeys: String, CodingKey {
+        
+        
+        case poster_path
+        
+        case release_date
+        case title
+        case overview
+        case thumbnail = "url"
+        case filmId = "id"
         
     }
     
-    init(json: JSON){
-        if let item = json["release_date"].string {
-            videoId = item
+    init (from decoder: Decoder) throws {
+        
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        // Parse title
+        self.title = try container.decode(String.self, forKey: .title)
+        
+        // Parse description
+        self.overview = try container.decode(String.self, forKey: .overview)
+        
+        // Parse the publish date
+        let dateStr = try container.decode(String.self, forKey: .release_date)
+        if let formattedDate = FilmFormatter.decode(dateStr) {
+            self.release_date = formattedDate
         }
-        if let item = json["id"].string {
-            videoId = item
-        }
-        if let item = json["title"].string {
-            title = item
-        }
-        if let item = json["poster_path"].string {
-            poster_path = "https://image.tmdb.org/t/p/w500" + item
-        }
-        if let item = json["overview"].string {
-            overview = item
-        }
-        if let item = json["vote_average"].string {
-            vote_average = item
-        }
-        /*
-         another one way how to decode
-         self.title = try snippetContainer.decode(String.self, forKey:.title)
-         */
+        // Parse poster_path
+        
+        // self.poster_path = try container.decode(String.self, forKey: .poster_path)
+        let imgPath = try container.decode(String.self, forKey: .poster_path)
+            self.poster_path = Constans.imageBaseUrl+(imgPath)
+        
+        self.filmId = try container.decode(Int.self, forKey: .filmId)
     }
 }
 

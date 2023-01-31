@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		40666AD3DABEF6A623D6FED5 /* Pods_BlindCinemaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5579D9F0C2B6120BA897AA4A /* Pods_BlindCinemaTests.framework */; };
 		7398CD8679DED1DCE05159EA /* Pods_BlindCinema_BlindCinemaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A10E8C6B1F263F98B3CCD4E /* Pods_BlindCinema_BlindCinemaUITests.framework */; };
+		801B7A622989516500BE814B /* FilmFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7A612989516500BE814B /* FilmFormatter.swift */; };
+		801B7A6429896F2B00BE814B /* CashManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7A6329896F2B00BE814B /* CashManager.swift */; };
 		80B77F7F29865E5700766F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B77F7E29865E5700766F74 /* AppDelegate.swift */; };
 		80B77F8129865E5700766F74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B77F8029865E5700766F74 /* SceneDelegate.swift */; };
 		80B77F8329865E5700766F74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B77F8229865E5700766F74 /* ViewController.swift */; };
@@ -25,6 +27,7 @@
 		80B77FC62987A9F000766F74 /* FilmsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B77FC52987A9F000766F74 /* FilmsDetailViewController.swift */; };
 		80B77FC92987B01100766F74 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B77FC82987B01100766F74 /* Constants.swift */; };
 		80B77FCB2987B76600766F74 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B77FCA2987B76600766F74 /* Model.swift */; };
+		80B77FCD2987FE6900766F74 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B77FCC2987FE6900766F74 /* Response.swift */; };
 		E82A9F4769E4139DE1776118 /* Pods_BlindCinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A861542490B7EA2971164431 /* Pods_BlindCinema.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +52,8 @@
 		47A03E7EB0808D60E4907657 /* Pods-BlindCinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlindCinema.debug.xcconfig"; path = "Target Support Files/Pods-BlindCinema/Pods-BlindCinema.debug.xcconfig"; sourceTree = "<group>"; };
 		4A10E8C6B1F263F98B3CCD4E /* Pods_BlindCinema_BlindCinemaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlindCinema_BlindCinemaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5579D9F0C2B6120BA897AA4A /* Pods_BlindCinemaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlindCinemaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		801B7A612989516500BE814B /* FilmFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFormatter.swift; sourceTree = "<group>"; };
+		801B7A6329896F2B00BE814B /* CashManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashManager.swift; sourceTree = "<group>"; };
 		80B77F7B29865E5700766F74 /* BlindCinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlindCinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B77F7E29865E5700766F74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80B77F8029865E5700766F74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +74,7 @@
 		80B77FC52987A9F000766F74 /* FilmsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsDetailViewController.swift; sourceTree = "<group>"; };
 		80B77FC82987B01100766F74 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		80B77FCA2987B76600766F74 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		80B77FCC2987FE6900766F74 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		A38712CBE6CEC4EBC69065B0 /* Pods-BlindCinema-BlindCinemaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlindCinema-BlindCinemaUITests.debug.xcconfig"; path = "Target Support Files/Pods-BlindCinema-BlindCinemaUITests/Pods-BlindCinema-BlindCinemaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A861542490B7EA2971164431 /* Pods_BlindCinema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlindCinema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94AA575A5C04F2693DBDD30 /* Pods-BlindCinema-BlindCinemaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlindCinema-BlindCinemaUITests.release.xcconfig"; path = "Target Support Files/Pods-BlindCinema-BlindCinemaUITests/Pods-BlindCinema-BlindCinemaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,23 +146,21 @@
 		80B77F7D29865E5700766F74 /* BlindCinema */ = {
 			isa = PBXGroup;
 			children = (
+				80B77FCE2989214900766F74 /* Storyboards */,
 				80B77FC72987AFF800766F74 /* Helpers */,
 				80B77FC42986BB0B00766F74 /* Managers */,
 				80B77FC32986BAF800766F74 /* Resources */,
 				80B77FBE2986BA9500766F74 /* Models */,
 				80B77FC02986BAB500766F74 /* Views */,
 				80B77FC22986BAC600766F74 /* ViewModels */,
-				80B77FBF2986BA9C00766F74 /* Controllers */,
-				80B77FBC2986A19800766F74 /* FilmsViewController.swift */,
+				80B77FBF2986BA9C00766F74 /* View Controllers */,
 				80B77FC52987A9F000766F74 /* FilmsDetailViewController.swift */,
-				80B77FB829867DE000766F74 /* FilmsTableViewCell.swift */,
+				80B77FCC2987FE6900766F74 /* Response.swift */,
 				80B77F7E29865E5700766F74 /* AppDelegate.swift */,
 				80B77F8029865E5700766F74 /* SceneDelegate.swift */,
 				80B77FAE2986667500766F74 /* TabBarController.swift */,
 				80B77F8229865E5700766F74 /* ViewController.swift */,
-				80B77F8429865E5700766F74 /* Main.storyboard */,
 				80B77F8729865E5800766F74 /* Assets.xcassets */,
-				80B77F8929865E5800766F74 /* LaunchScreen.storyboard */,
 				80B77F8C29865E5800766F74 /* Info.plist */,
 			);
 			path = BlindCinema;
@@ -188,16 +192,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		80B77FBF2986BA9C00766F74 /* Controllers */ = {
+		80B77FBF2986BA9C00766F74 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				80B77FBC2986A19800766F74 /* FilmsViewController.swift */,
 			);
-			path = Controllers;
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		80B77FC02986BAB500766F74 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				80B77FB829867DE000766F74 /* FilmsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,8 +233,19 @@
 			isa = PBXGroup;
 			children = (
 				80B77FC82987B01100766F74 /* Constants.swift */,
+				801B7A612989516500BE814B /* FilmFormatter.swift */,
+				801B7A6329896F2B00BE814B /* CashManager.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		80B77FCE2989214900766F74 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				80B77F8429865E5700766F74 /* Main.storyboard */,
+				80B77F8929865E5800766F74 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		99FBF2732E74FA37907A1FE2 /* Pods */ = {
@@ -488,8 +505,11 @@
 				80B77FBD2986A19800766F74 /* FilmsViewController.swift in Sources */,
 				80B77FC62987A9F000766F74 /* FilmsDetailViewController.swift in Sources */,
 				80B77FB729867BD400766F74 /* EntityFilm.swift in Sources */,
+				801B7A6429896F2B00BE814B /* CashManager.swift in Sources */,
 				80B77FCB2987B76600766F74 /* Model.swift in Sources */,
+				801B7A622989516500BE814B /* FilmFormatter.swift in Sources */,
 				80B77FAF2986667500766F74 /* TabBarController.swift in Sources */,
+				80B77FCD2987FE6900766F74 /* Response.swift in Sources */,
 				80B77F7F29865E5700766F74 /* AppDelegate.swift in Sources */,
 				80B77F8129865E5700766F74 /* SceneDelegate.swift in Sources */,
 				80B77FC92987B01100766F74 /* Constants.swift in Sources */,

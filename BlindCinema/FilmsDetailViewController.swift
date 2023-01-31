@@ -11,10 +11,9 @@ import WebKit
 class FilmsDetailViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var webView: WKWebView!
-    
     @IBOutlet weak var descriptionView: UITextView!
+    @IBOutlet weak var releaseDate: UILabel!
     
     var entityFilm: EntityFilm?
     

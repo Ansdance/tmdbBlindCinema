@@ -13,7 +13,9 @@ struct Constans {
     static var PLAYLIST_ID = ""
     static var NAME_OF_SEARCHING = "Yes"
     static var API_URL = "https://api.themoviedb.org/3/search/movie?api_key=\(Constans.API_KEY)&language=ru-RU&query=\(Constans.NAME_OF_SEARCHING)&page=1&include_adult=false&region=ru"
-    static var VIDEOCELL_ID = "VideoCell"
+//    static var VIDEOCELL_ID = "VideoCell"
     static var EMBED_URL = ""
+    static let imageBaseUrl = "https://image.tmdb.org/t/p/w500"
+    static var FILMCELL_ID = "FilmCell"
     
 }
