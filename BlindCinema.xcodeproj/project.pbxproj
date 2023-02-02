@@ -155,7 +155,6 @@
 				80B77FC22986BAC600766F74 /* ViewModels */,
 				80B77FBF2986BA9C00766F74 /* View Controllers */,
 				80B77FC52987A9F000766F74 /* FilmsDetailViewController.swift */,
-				80B77FCC2987FE6900766F74 /* Response.swift */,
 				80B77F7E29865E5700766F74 /* AppDelegate.swift */,
 				80B77F8029865E5700766F74 /* SceneDelegate.swift */,
 				80B77FAE2986667500766F74 /* TabBarController.swift */,
@@ -187,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				80B77FB629867BD400766F74 /* EntityFilm.swift */,
+				80B77FCC2987FE6900766F74 /* Response.swift */,
 				80B77FCA2987B76600766F74 /* Model.swift */,
 			);
 			path = Models;

@@ -44,7 +44,7 @@ class FilmsTableViewCell: UITableViewCell {
         }
         
         // Download the thumbnail data
-        let url = URL(string: self.entityFilms!.poster_path)
+        let url = URL(string: self.entityFilms?.poster_path ?? "nil")
         
         // Get the shared URL Session object
         let session = URLSession.shared

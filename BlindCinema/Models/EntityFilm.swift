@@ -9,24 +9,22 @@ import Foundation
 
 struct EntityFilm: Decodable {
     
-    var filmId: Int
-    var title = ""
-    var poster_path = ""
-    var overview = ""
-    var vote_average = ""
+    var id: Int?
+    var title: String?
+    var poster_path: String?
+    var overview: String?
+    var vote_average: String?
     var release_date = Date()
-    var vote_count = ""
+    var vote_count: String?
     
     enum CodingKeys: String, CodingKey {
         
         
         case poster_path
-        
         case release_date
         case title
         case overview
-        case thumbnail = "url"
-        case filmId = "id"
+        case id
         
     }
     
@@ -48,10 +46,18 @@ struct EntityFilm: Decodable {
         // Parse poster_path
         
         // self.poster_path = try container.decode(String.self, forKey: .poster_path)
-        let imgPath = try container.decode(String.self, forKey: .poster_path)
-            self.poster_path = Constans.imageBaseUrl+(imgPath)
         
-        self.filmId = try container.decode(Int.self, forKey: .filmId)
+        
+        if var imgPath = try? container.decode(String.self, forKey: .poster_path) {
+            self.poster_path = Constans.imageBaseUrl + imgPath
+        } else {
+            self.poster_path = "N/A"
+        }
+        
+//            self.poster_path = Constans.imageBaseUrl+imgPath
+//        print(poster_path ?? "nil")
+        
+        self.id = try container.decode(Int.self, forKey: .id)
     }
 }
 

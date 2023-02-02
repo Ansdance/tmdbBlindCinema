@@ -34,19 +34,14 @@ class Model {
             
             //Check if there were any error
             if error != nil || data == nil {
-                print("im here")
                 return
             }
             
             do {
                 //Parsing the data into video object
-                print("im in do")
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
-                print("im before response")
-                print(data!)
                 let response = try decoder.decode(Response.self, from: data!)
-                print("__________________")
                 if response.results != nil {
                     
                     DispatchQueue.main.async {
@@ -57,7 +52,7 @@ class Model {
                 }
             }
             catch {
-                print("im in catch")
+//                print(error)
             }
         }
         //Kick off the task
